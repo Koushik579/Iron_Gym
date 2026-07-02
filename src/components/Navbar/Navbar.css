@@ -37,15 +37,19 @@ nav{
                 border-color .3s ease;
     border-bottom: 2px solid transparent;
     padding-bottom: 4px;
+    transition: transform 0.3s ease;
 }
 
 .nav_links a:hover{
     color: var(--accent);
+    transform: scale(1.2);
 }
 
 .active{
     color: var(--accent) !important;
     border-bottom-color: var(--accent);
+    transform: scale(1.2);
+
 }
 
 .join_btn{

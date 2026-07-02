@@ -104,6 +104,61 @@ function Home(){
             rating: 5.0
         }
     ];
+    const membershipPlans = [
+        {
+            id: 1,
+            title: "Basic",
+            featured: false,
+            price: 999,
+            access: [
+                "Gym Access",
+                "Locker"
+            ]
+        },
+        {
+            id: 2,
+            title: "Standard",
+            featured: true,
+            price: 1999,
+            access: [
+                "Gym Access",
+                "Locker",
+                "Diet Plan"
+            ]
+        },
+        {
+            id: 3,
+            title: "Premium",
+            featured: false,
+            price: 2999,
+            access: [
+                "Gym Access",
+                "Locker",
+                "Diet Plan",
+                "Personal Trainer"
+            ]
+        }
+    ];
+    const reviews = [
+        {
+            id: 1,
+            stars: "⭐⭐⭐⭐⭐",
+            name: "Rahul Sharma",
+            msg: "I lost 12 kg in just five months. The trainers were incredibly supportive and kept me motivated throughout my journey."
+        },
+        {
+            id: 2,
+            stars: "⭐⭐⭐⭐⭐",
+            name: "Sarmistha Roy",
+            msg: "The equipment is excellent, the gym is always clean, and the atmosphere motivates me to give my best every day."
+        },
+        {
+            id: 3,
+            stars: "⭐⭐⭐⭐⭐",
+            name: "Amit Verma",
+            msg: "The personalized workout and nutrition plan completely transformed my lifestyle. Highly recommended!"
+        }
+    ];
     return(
         <div className="main_body">
             <div className="header">
@@ -202,6 +257,129 @@ function Home(){
                             </div>
                         </div>
                     ))}
+                </div>
+            </div>
+            <div className="plans">
+                <div className="section_heading">
+                    <h1>Membership Plans</h1>
+                    <p>
+                        Choose the perfect membership plan that matches your fitness goals.
+                    </p>
+                </div>
+                <div className="plan_cards">
+                    {membershipPlans.map((plan) => (
+                        <div
+                            className={`plan_card ${plan.featured ? "featured" : ""}`}
+                            key={plan.id}
+                        >
+                            {plan.featured && (
+                                <div className="popular_tag">
+                                    Most Popular
+                                </div>
+                            )}
+                            <div className="plan_content">
+                                <h2>{plan.title}</h2>
+                                <h1>
+                                    ₹{plan.price}
+                                    <span>/month</span>
+                                </h1>
+                                <h3>Features</h3>
+                                <div className="feature_list">
+                                    {plan.access.map((feature, index) => (
+                                        <p key={index}>✔ {feature}</p>
+                                    ))}
+                                </div>
+                                <button className="plan_btn">
+                                    Join Now
+                                </button>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+            <div className="bmi">
+                <div className="bmi_content">
+                    <h1>Know Your BMI</h1>
+                    <p>
+                        Calculate your Body Mass Index in seconds and discover
+                        whether you're underweight, healthy, overweight, or obese.
+                        Start tracking your fitness journey today.
+                    </p>
+                    <div className="bmi_stats">
+                        <div>
+                            <h2>5000+</h2>
+                            <span>Members</span>
+                        </div>
+                        <div>
+                            <h2>20+</h2>
+                            <span>Certified Trainers</span>
+                        </div>
+                        <div>
+                            <h2>15+</h2>
+                            <span>Years Experience</span>
+                        </div>
+                    </div>
+                    <Link to="/bmi">
+                        <button className="bmi_btn">
+                            Calculate BMI
+                        </button>
+                    </Link>
+                </div>
+            </div>
+            <div className="reviews">
+                <div className="section_heading">
+                    <h1>What Our Members Say</h1>
+                    <p>
+                        Thousands of members trust Iron Gym to help them
+                        achieve their fitness goals.
+                    </p>
+                </div>
+                <div className="review_cards">
+                    {reviews.map((review) => (
+                        <div className="review_card" key={review.id}>
+                            <div className="review_star">
+                                {review.stars}
+                            </div>
+                            <p className="review_msg">
+                                "{review.msg}"
+                            </p>
+                            <div className="review_user">
+                                <div className="review_avatar">
+                                    {review.name.charAt(0)}
+                                </div>
+                                <div>
+                                    <h4>{review.name}</h4>
+                                    <span>Gym Member</span>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+            <div className="cta">
+                <div className="cta_content">
+                    <span className="cta_tag">
+                        Start Your Fitness Journey
+                    </span>
+                    <h1>
+                        READY TO CHANGE YOUR LIFE?
+                    </h1>
+                    <p>
+                        Every transformation begins with a single step.
+                        Join Iron Gym today and gain access to expert trainers,
+                        world-class equipment, personalized workout plans,
+                        and a community that pushes you to become your strongest self.
+                    </p>
+                    <div className="cta_buttons">
+                        <button className="cta_btn">
+                            Join Now
+                        </button>
+                        <Link to="/contact">
+                            <button className="cta_btn_outline">
+                                Contact Us
+                            </button>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>
