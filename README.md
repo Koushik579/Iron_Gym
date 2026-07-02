@@ -1,16 +1,142 @@
-# React + Vite
+# 💪 Iron Gym
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive gym website built with **React** and **Vite**. Iron Gym is designed to provide a clean, engaging, and user-friendly experience for fitness enthusiasts, showcasing gym services, trainers, membership plans, and more.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- 🏋️ Modern and responsive UI
+- 📱 Mobile-friendly design
+- ⚡ Fast performance with Vite
+- 🧩 Reusable React components
+- 🎨 Clean and aesthetic layout
+- 🖼️ High-quality visuals and icons
+- 📄 Organized project structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Built With
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- React Router DOM
+- React Icons
+
+---
+
+## 📂 Project Structure
+
+```
+Iron_Gym/
+│
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+---
+
+## 📦 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/Koushik579/Iron_Gym.git
+```
+
+Go to the project folder
+
+```bash
+cd Iron_Gym
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the development server
+
+```bash
+npm run dev
+```
+
+Open your browser and visit
+
+```
+http://localhost:5173
+```
+
+---
+
+## 📸 Screenshots
+
+> Add screenshots of your homepage here after completing the project.
+
+---
+
+## 🎯 Future Improvements
+
+- Membership registration
+- Trainer profiles
+- Workout plans
+- BMI Calculator
+- Dark/Light theme
+- Contact form with backend
+- Payment integration
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a new branch
+
+```bash
+git checkout -b feature-name
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Add new feature"
+```
+
+4. Push your branch
+
+```bash
+git push origin feature-name
+```
+
+5. Open a Pull Request
+
+---
+
+## 👨‍💻 Author
+
+**Koushik Karmakar**
+
+- GitHub: https://github.com/Koushik579
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
+
+---
