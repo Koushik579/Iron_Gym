@@ -1,0 +1,64 @@
+:root{
+
+    /* Backgrounds */
+    --bg-primary: #0F0F0F;
+    --bg-secondary: #181818;
+    --bg-card: #232323;
+    --bg-hover: #2D2D2D;
+
+    /* Text */
+    --text-primary: #FFFFFF;
+    --text-secondary: #B8B8B8;
+    --text-muted: #7A7A7A;
+
+    /* Accent */
+    --accent: #E63946;
+    --accent-hover: #C1121F;
+    --accent-light: #FF5C6C;
+
+    /* Borders */
+    --border: #333333;
+
+    /* Success / Warning */
+    --success: #22C55E;
+    --warning: #F59E0B;
+    --danger: #EF4444;
+
+    /* Shadow */
+    --shadow: rgba(0,0,0,0.45);
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--bg-primary);
+    color:var(--text-primary);
+    font-family:"Poppins",sans-serif;
+    overflow-x:hidden;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+button{
+    cursor:pointer;
+    border:none;
+    outline:none;
+    font-family:inherit;
+}
