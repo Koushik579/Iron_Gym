@@ -45,7 +45,7 @@ function Navbar(){
                 </NavLink>
             </div>
             <div className="join">
-                <button>Join Now</button>
+                <button className="join_btn">Join Now</button>
             </div>
         </nav>
     )

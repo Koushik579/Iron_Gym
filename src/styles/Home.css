@@ -1,0 +1,270 @@
+.header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.hero_icon{
+    height: 450px;
+    width: 450px;
+}
+.header video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tint{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+.hero_content{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.hero_content h1{
+    font-size: 50px;
+}
+.hero_content p{
+    font-size: 20px;
+}
+.btn_div{
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+.btn{
+    width: 150px;
+    height: 60px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 12px 26px;
+    border-radius: 50px;
+    font-size: .95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .3s ease,
+                transform .3s ease;
+}
+
+.btn:hover{
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+}
+
+.why{
+   width:100%;
+    padding:120px 8%;
+    background:var(--bg-primary);
+}
+
+.why_heading{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.why_heading h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.why_heading p{
+    max-width:750px;
+    margin:auto;
+    color:var(--text-secondary);
+    line-height:1.8;
+    font-size:1.1rem;
+}
+.why_cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+.why_card{
+    background:var(--bg-card);
+    border:1px solid var(--border);
+    border-radius:18px;
+    padding:40px 30px;
+    transition:.35s;
+    cursor:pointer;
+}
+
+.why_card:hover{
+    transform:translateY(-10px);
+    border-color:var(--accent);
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+}
+
+.icon{
+    font-size:3rem;
+    margin-bottom:25px;
+}
+
+.why_card h3{
+    margin-bottom:18px;
+    font-size:1.5rem;
+}
+
+.why_card p{
+    color:var(--text-secondary);
+    line-height:1.8;
+}
+
+.programs{
+    width: 100%;
+    padding: 120px 8%;
+    background: var(--bg-secondary);
+}
+
+.program_cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.program_card{
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .35s ease;
+    cursor: pointer;
+    display:flex;
+    flex-direction: column;
+}
+
+.program_card:hover{
+    transform: translateY(-10px);
+    border-color: var(--accent);
+    box-shadow: 0 20px 40px rgba(0,0,0,.35);
+    
+}
+
+.program_card video{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.program_card video:hover{
+    transform: scale(1.5);
+    
+}
+
+.program_card h3{
+    font-size: 1.6rem;
+    margin: 25px 25px 10px;
+    color: var(--text-primary);
+}
+
+.program_card p{
+    margin: 0 25px 30px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+.program_content{
+    padding:25px;
+}
+
+.program_content h3{
+    margin-bottom:15px;
+    font-size:1.5rem;
+}
+
+.program_content p{
+    margin-bottom:25px;
+    color:var(--text-secondary);
+    line-height:1.7;
+}
+
+.trainers{
+    padding:120px 8%;
+    background:var(--bg-primary);
+}
+
+.section_heading{
+    text-align:center;
+    max-width:700px;
+    margin:auto;
+}
+
+.section_heading h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.section_heading p{
+    color:var(--text-secondary);
+    line-height:1.8;
+}
+
+.coach_cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top:70px;
+}
+
+.coach_card{
+    background:var(--bg-card);
+    border-radius:20px;
+    overflow:hidden;
+    border:1px solid var(--border);
+    transition:.35s;
+}
+
+.coach_card:hover{
+    transform:translateY(-10px);
+    border-color:var(--accent);
+}
+
+.coach_card img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    display:block;
+}
+
+.coach_content{
+    padding:25px;
+}
+
+.coach_content h3{
+    margin-bottom:10px;
+    font-size:1.6rem;
+}
+
+.coach_content span{
+    color:var(--accent);
+    font-weight:600;
+}
+
+.coach_content p{
+    color:var(--text-secondary);
+    margin:15px 0;
+}
+
+.rating{
+    font-weight:bold;
+}
