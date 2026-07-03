@@ -17,6 +17,8 @@ import cardio from '../assets/videos/cardio.mp4';
 import rajiv from '../assets/images/rajiv.jpeg';
 import dipak from '../assets/images/dipak.jpg';
 import salini from '../assets/images/salini.jpg';
+import Cta from '../components/Cta';
+import PriceCard from '../components/PriceCard';
 
 function Home(){
     const features = [
@@ -104,41 +106,7 @@ function Home(){
             rating: 5.0
         }
     ];
-    const membershipPlans = [
-        {
-            id: 1,
-            title: "Basic",
-            featured: false,
-            price: 999,
-            access: [
-                "Gym Access",
-                "Locker"
-            ]
-        },
-        {
-            id: 2,
-            title: "Standard",
-            featured: true,
-            price: 1999,
-            access: [
-                "Gym Access",
-                "Locker",
-                "Diet Plan"
-            ]
-        },
-        {
-            id: 3,
-            title: "Premium",
-            featured: false,
-            price: 2999,
-            access: [
-                "Gym Access",
-                "Locker",
-                "Diet Plan",
-                "Personal Trainer"
-            ]
-        }
-    ];
+    
     const reviews = [
         {
             id: 1,
@@ -259,44 +227,7 @@ function Home(){
                     ))}
                 </div>
             </div>
-            <div className="plans">
-                <div className="section_heading">
-                    <h1>Membership Plans</h1>
-                    <p>
-                        Choose the perfect membership plan that matches your fitness goals.
-                    </p>
-                </div>
-                <div className="plan_cards">
-                    {membershipPlans.map((plan) => (
-                        <div
-                            className={`plan_card ${plan.featured ? "featured" : ""}`}
-                            key={plan.id}
-                        >
-                            {plan.featured && (
-                                <div className="popular_tag">
-                                    Most Popular
-                                </div>
-                            )}
-                            <div className="plan_content">
-                                <h2>{plan.title}</h2>
-                                <h1>
-                                    ₹{plan.price}
-                                    <span>/month</span>
-                                </h1>
-                                <h3>Features</h3>
-                                <div className="feature_list">
-                                    {plan.access.map((feature, index) => (
-                                        <p key={index}>✔ {feature}</p>
-                                    ))}
-                                </div>
-                                <button className="plan_btn">
-                                    Join Now
-                                </button>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
+            <PriceCard/>
             <div className="bmi">
                 <div className="bmi_content">
                     <h1>Know Your BMI</h1>
@@ -356,32 +287,7 @@ function Home(){
                     ))}
                 </div>
             </div>
-            <div className="cta">
-                <div className="cta_content">
-                    <span className="cta_tag">
-                        Start Your Fitness Journey
-                    </span>
-                    <h1>
-                        READY TO CHANGE YOUR LIFE?
-                    </h1>
-                    <p>
-                        Every transformation begins with a single step.
-                        Join Iron Gym today and gain access to expert trainers,
-                        world-class equipment, personalized workout plans,
-                        and a community that pushes you to become your strongest self.
-                    </p>
-                    <div className="cta_buttons">
-                        <button className="cta_btn">
-                            Join Now
-                        </button>
-                        <Link to="/contact">
-                            <button className="cta_btn_outline">
-                                Contact Us
-                            </button>
-                        </Link>
-                    </div>
-                </div>
-            </div>
+            <Cta/>
         </div>
     )
 }
