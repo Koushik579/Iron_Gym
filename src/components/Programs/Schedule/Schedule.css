@@ -1,0 +1,47 @@
+.schedule{
+    padding:120px 8%;
+    background:var(--bg-primary);
+}
+
+.schedule_table{
+    margin-top:70px;
+    border-radius:20px;
+    overflow:hidden;
+    border:1px solid var(--border);
+}
+
+.table_header{
+    display:grid;
+    grid-template-columns:1fr 2fr 2fr 2fr;
+    background:var(--accent);
+    color:white;
+    font-weight:600;
+}
+
+.table_header div{
+    padding:22px;
+    text-align:center;
+}
+
+.table_row{
+    display:grid;
+    grid-template-columns:1fr 2fr 2fr 2fr;
+    background:var(--bg-card);
+    border-top:1px solid var(--border);
+    transition:.3s;
+}
+
+.table_row:hover{
+    background:#202020;
+}
+
+.table_row div{
+    padding:22px;
+    text-align:center;
+    color:var(--text-secondary);
+}
+
+.table_row div:first-child{
+    color:var(--text-primary);
+    font-weight:600;
+}
