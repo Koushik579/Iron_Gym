@@ -1,0 +1,83 @@
+.training_process{
+    padding:120px 8%;
+    background:var(--bg-secondary);
+}
+
+.process_grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:70px;
+}
+
+.process_card{
+    background:var(--bg-card);
+    border:1px solid var(--border);
+    border-radius:20px;
+    padding:40px 30px;
+    text-align:center;
+    transition:.35s;
+    position:relative;
+}
+
+.process_card:hover{
+    transform:translateY(-10px);
+    border-color:var(--accent);
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+}
+
+.process_card::before{
+    content:counter(step);
+    counter-increment:step;
+    position:absolute;
+    top:20px;
+    right:20px;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    background:var(--accent);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:.9rem;
+    font-weight:bold;
+}
+
+.process_icon{
+    width:80px;
+    height:80px;
+    margin:0 auto 25px;
+    border-radius:50%;
+    background:rgba(239,68,68,.15);
+    color:var(--accent);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:2rem;
+}
+
+.process_card h3{
+    margin-bottom:15px;
+}
+
+.process_card p{
+    color:var(--text-secondary);
+    line-height:1.8;
+}
+
+.process_grid{
+    counter-reset:step;
+}
+
+@media(max-width:992px){
+    .process_grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:768px){
+    .process_grid{
+        grid-template-columns:1fr;
+    }
+}

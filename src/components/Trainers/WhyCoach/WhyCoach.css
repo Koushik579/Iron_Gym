@@ -1,0 +1,69 @@
+.why_coach{
+    padding:120px 8%;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    align-items:center;
+    background:var(--bg-secondary);
+}
+
+.coach_image{
+    overflow:hidden;
+    border-radius:20px;
+}
+
+.coach_image img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    transition:.4s;
+}
+
+.coach_image:hover img{
+    transform:scale(1.05);
+}
+
+.coach_content h2{
+    font-size:3rem;
+    margin:20px 0;
+}
+
+.coach_content > p{
+    color:var(--text-secondary);
+    line-height:1.9;
+    margin-bottom:40px;
+}
+
+.coach_benefits{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.coach_benefit{
+    display:flex;
+    gap:20px;
+    align-items:flex-start;
+}
+
+.coach_icon{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:rgba(239,68,68,.15);
+    color:var(--accent);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.5rem;
+    flex-shrink:0;
+}
+
+.coach_benefit h3{
+    margin-bottom:8px;
+}
+
+.coach_benefit p{
+    color:var(--text-secondary);
+    line-height:1.8;
+}

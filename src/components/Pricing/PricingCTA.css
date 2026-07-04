@@ -1,0 +1,82 @@
+.pricing_cta{
+    position:relative;
+    padding:140px 8%;
+    background:
+    linear-gradient(
+        135deg,
+        #101010,
+        #1b1b1b
+    );
+
+    overflow:hidden;
+}
+
+.pricing_cta_overlay{
+    position:absolute;
+    inset:0;
+    background:
+    radial-gradient(
+        circle at top right,
+        rgba(239,68,68,.18),
+        transparent 45%
+    );
+}
+
+.pricing_cta_content{
+    position:relative;
+    z-index:2;
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+}
+
+.pricing_cta_content h2{
+    font-size:3.5rem;
+    margin:25px 0;
+}
+
+.pricing_cta_content p{
+    color:var(--text-secondary);
+    line-height:1.9;
+    max-width:700px;
+    margin:0 auto 45px;
+}
+
+.pricing_cta_buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.cta_primary_btn{
+    padding:18px 40px;
+    border:none;
+    border-radius:50px;
+    background:var(--accent);
+    color:white;
+    font-size:1rem;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.cta_primary_btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 35px rgba(239,68,68,.35);
+}
+
+.cta_secondary_btn{
+    padding:18px 40px;
+    border:2px solid var(--accent);
+    background:transparent;
+    color:var(--accent);
+    border-radius:50px;
+    font-size:1rem;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.cta_secondary_btn:hover{
+    background:var(--accent);
+    color:white;
+}

@@ -1,0 +1,95 @@
+.trainer_hero{
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    overflow: hidden;
+}
+
+.trainer_hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* DARK OVERLAY */
+
+.trainer_overlay{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        rgba(0,0,0,.65),
+        rgba(0,0,0,.55)
+    );
+}
+
+.trainer_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: min(90%,800px);
+    z-index: 10;
+}
+
+.hero_tag{
+    display: inline-block;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 10px 24px;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    font-size: .9rem;
+}
+
+.trainer_content h1{
+    font-size: clamp(2.8rem,5vw,5rem);
+    color: white;
+    margin-bottom: 25px;
+}
+
+.trainer_content p{
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.trainer_buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.primary_btn{
+    padding: 16px 40px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.primary_btn:hover{
+    transform: translateY(-3px);
+}
+
+.secondary_btn{
+    padding: 16px 40px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.secondary_btn:hover{
+    background: white;
+    color: black;
+}

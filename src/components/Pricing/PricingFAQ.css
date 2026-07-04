@@ -1,0 +1,50 @@
+.pricing_faq{
+    padding:120px 8%;
+    background:var(--bg-primary);
+}
+
+.faq_container{
+    max-width:900px;
+    margin:70px auto 0;
+}
+
+.faq_item{
+    margin-bottom:20px;
+    border:1px solid var(--border);
+    border-radius:15px;
+    overflow:hidden;
+    background:var(--bg-card);
+    transition:.3s;
+}
+
+.faq_item:hover{
+    border-color:var(--accent);
+}
+
+.faq_question{
+    width:100%;
+    padding:22px 25px;
+    background:none;
+    border:none;
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:var(--text-primary);
+    font-size:1.1rem;
+    font-weight:600;
+}
+
+.faq_question svg{
+    color:var(--accent);
+    font-size:1rem;
+}
+
+.faq_answer{
+    padding:0 25px 25px;
+}
+
+.faq_answer p{
+    color:var(--text-secondary);
+    line-height:1.8;
+}
