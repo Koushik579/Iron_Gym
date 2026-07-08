@@ -1,0 +1,49 @@
+.bmi_faq{
+    padding:120px 8%;
+    background:var(--bg-primary);
+}
+
+.faq_container{
+    max-width:900px;
+    margin:70px auto 0;
+}
+
+.faq_item{
+    margin-bottom:20px;
+    background:var(--bg-card);
+    border:1px solid var(--border);
+    border-radius:16px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.faq_item:hover{
+    border-color:var(--accent);
+}
+
+.faq_question{
+    width:100%;
+    padding:22px 25px;
+    border:none;
+    background:none;
+    color:var(--text-primary);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:1.05rem;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.faq_question svg{
+    color:var(--accent);
+}
+
+.faq_answer{
+    padding:0 25px 25px;
+}
+
+.faq_answer p{
+    color:var(--text-secondary);
+    line-height:1.8;
+}

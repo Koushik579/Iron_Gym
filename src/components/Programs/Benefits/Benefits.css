@@ -67,3 +67,143 @@
     color:var(--text-secondary);
     line-height:1.8;
 }
+
+@media (max-width:1200px){
+
+    .benefits{
+        padding:100px 6%;
+        gap:60px;
+    }
+
+    .benefits_image img{
+        height:550px;
+    }
+
+    .benefits_content h2{
+        font-size:2.6rem;
+    }
+
+    .benefit_list{
+        align-items: center;
+    }
+}
+
+@media (max-width:992px){
+
+    .benefits{
+        grid-template-columns:1fr;
+        padding:90px 5%;
+        gap:50px;
+    }
+
+    .benefits_image{
+        max-width:700px;
+        margin:auto;
+    }
+
+    .benefits_image img{
+        height:500px;
+    }
+
+    .benefits_content{
+        text-align:center;
+    }
+
+    .benefits_content h2{
+        font-size:2.3rem;
+    }
+
+    .benefit_list{
+        align-items: center;
+    }
+}
+
+@media (max-width:768px){
+
+    .benefits{
+        padding:80px 5%;
+        gap:40px;
+    }
+
+    .benefits_image{
+        max-width:500px;
+    }
+
+    .benefits_image img{
+        height:400px;
+    }
+
+    .benefits_content h2{
+        font-size:2rem;
+    }
+
+    .benefits_content>p{
+        margin-bottom:30px;
+    }
+
+    .benefit_list{
+        align-items: center;
+        gap:20px;
+    }
+
+    .benefit_item{
+        gap:15px;
+        text-align:left;
+    }
+
+    .benefit_icon{
+        width:55px;
+        height:55px;
+        font-size:1.3rem;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .benefits{
+        padding:70px 20px;
+    }
+
+    .benefits_image{
+        border-radius:15px;
+    }
+
+    .benefits_image img{
+        height:280px;
+    }
+
+    .benefits_content h2{
+        font-size:1.8rem;
+    }
+
+    .benefits_content>p{
+        font-size:.95rem;
+        line-height:1.8;
+    }
+
+    .benefit_list{
+        gap:18px;
+        align-items: center;
+    }
+
+    .benefit_item{
+        gap:12px;
+    }
+
+    .benefit_icon{
+        width:50px;
+        height:50px;
+        font-size:1.2rem;
+    }
+
+    .benefit_item h3{
+        font-size:1rem;
+    }
+
+    .benefit_item p{
+        font-size:.9rem;
+        line-height:1.7;
+    }
+
+}

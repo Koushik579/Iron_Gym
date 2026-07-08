@@ -1,9 +1,15 @@
 import "./PricingHero.css";
 import { Link } from "react-router-dom";
+import heroImg from "../../assets/images/pricingBanner.jpeg";
 
 function PricingHero() {
     return (
         <section className="pricing_hero">
+            <img
+                src={heroImg}
+                alt="Pricing Hero"
+                className="pricing_bg"
+            />
             <div className="pricing_overlay"></div>
             <div className="pricing_content">
 

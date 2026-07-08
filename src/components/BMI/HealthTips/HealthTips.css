@@ -1,0 +1,60 @@
+.health_tips{
+    padding:120px 8%;
+    background:var(--bg-secondary);
+}
+
+.tips_grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:70px;
+}
+
+.tip_card{
+    background:var(--bg-card);
+    border:1px solid var(--border);
+    border-radius:20px;
+    padding:40px 30px;
+    text-align:center;
+    transition:.3s;
+}
+
+.tip_card:hover{
+    transform:translateY(-8px);
+    border-color:var(--accent);
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+}
+
+.tip_icon{
+    width:80px;
+    height:80px;
+    margin:0 auto 25px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:rgba(239,68,68,.15);
+    color:var(--accent);
+    font-size:2rem;
+}
+
+.tip_card h3{
+    margin-bottom:15px;
+}
+
+.tip_card p{
+    color:var(--text-secondary);
+    line-height:1.8;
+}
+
+@media(max-width:992px){
+    .tips_grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:768px){
+    .tips_grid{
+        grid-template-columns:1fr;
+    }
+}

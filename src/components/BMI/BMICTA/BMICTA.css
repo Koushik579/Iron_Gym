@@ -1,0 +1,94 @@
+.bmi_cta{
+    position:relative;
+    padding:140px 8%;
+    background:linear-gradient(135deg,#101010,#1d1d1d);
+    overflow:hidden;
+}
+
+.bmi_cta_overlay{
+    position:absolute;
+    inset:0;
+    background:radial-gradient(circle at top right,
+        rgba(239,68,68,.18),
+        transparent 45%);
+}
+
+.bmi_cta_content{
+    position:relative;
+    z-index:2;
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+}
+
+.bmi_cta_content h2{
+    font-size:3.5rem;
+    margin:25px 0;
+}
+
+.bmi_cta_content p{
+    max-width:700px;
+    margin:0 auto 45px;
+    color:var(--text-secondary);
+    line-height:1.9;
+}
+
+.bmi_cta_buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.bmi_primary_btn,
+.bmi_secondary_btn{
+    padding:18px 40px;
+    border-radius:50px;
+    font-size:1rem;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.bmi_primary_btn{
+    background:var(--accent);
+    color:#fff;
+    border:none;
+}
+
+.bmi_primary_btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 35px rgba(239,68,68,.35);
+}
+
+.bmi_secondary_btn{
+    background:transparent;
+    color:#fff;
+    border:2px solid var(--accent);
+}
+
+.bmi_secondary_btn:hover{
+    background:var(--accent);
+    color:#fff;
+}
+
+@media(max-width:768px){
+
+    .bmi_cta{
+        padding:100px 8%;
+    }
+
+    .bmi_cta_content h2{
+        font-size:2.6rem;
+    }
+
+    .bmi_cta_buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .bmi_primary_btn,
+    .bmi_secondary_btn{
+        width:260px;
+    }
+
+}

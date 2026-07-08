@@ -90,3 +90,137 @@
 .trainer_info button:hover{
     transform:translateY(-3px);
 }
+
+/* ===========================
+   Large Laptop (1200px)
+=========================== */
+
+@media (max-width:1200px){
+
+    .trainer_section{
+        padding:100px 6%;
+    }
+
+    .trainer_grid{
+        gap:25px;
+    }
+
+    .trainer_card img{
+        height:360px;
+    }
+
+    .trainer_info{
+        padding:25px;
+    }
+
+    .trainer_info h3{
+        font-size:1.6rem;
+    }
+
+}
+
+@media (max-width:992px){
+
+    .trainer_section{
+        padding:90px 5%;
+    }
+
+    .trainer_grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:25px;
+    }
+
+    .trainer_card img{
+        height:340px;
+    }
+
+    .trainer_info{
+        padding:22px;
+    }
+
+    .trainer_info h3{
+        font-size:1.5rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .trainer_section{
+        padding:80px 5%;
+    }
+
+    .trainer_grid{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .trainer_card{
+        max-width:450px;
+        margin:auto;
+    }
+
+    .trainer_card img{
+        height:420px;
+    }
+
+    .trainer_info{
+        padding:25px;
+    }
+
+    .trainer_info h3{
+        font-size:1.5rem;
+    }
+
+    .trainer_info button{
+        padding:14px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .trainer_section{
+        padding:70px 20px;
+    }
+
+    .trainer_card{
+        border-radius:16px;
+    }
+
+    .trainer_card img{
+        height:300px;
+    }
+
+    .trainer_info{
+        padding:20px;
+    }
+
+    .trainer_info h3{
+        font-size:1.3rem;
+    }
+
+    .trainer_info span{
+        font-size:.95rem;
+    }
+
+    .rating{
+        gap:6px;
+        margin:15px 0;
+        font-size:.9rem;
+    }
+
+    .speciality{
+        gap:10px;
+        margin-bottom:25px;
+    }
+
+    .speciality p{
+        font-size:.95rem;
+    }
+
+    .trainer_info button{
+        padding:13px;
+        font-size:.95rem;
+    }
+}

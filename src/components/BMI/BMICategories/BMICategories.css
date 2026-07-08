@@ -1,0 +1,60 @@
+.bmi_categories{
+    padding:120px 8%;
+    background:var(--bg-primary);
+}
+
+.category_cards{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    margin-top:70px;
+}
+
+.category_card{
+    background:var(--bg-card);
+    border:1px solid var(--border);
+    border-radius:20px;
+    padding:35px 25px;
+    text-align:center;
+    transition:.3s;
+}
+
+.category_card:hover{
+    transform:translateY(-8px);
+    border-color:var(--accent);
+    box-shadow:0 15px 35px rgba(0,0,0,.3);
+}
+
+.category_circle{
+    width:110px;
+    height:110px;
+    margin:0 auto 25px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    font-size:1.2rem;
+    font-weight:700;
+}
+
+.category_card h3{
+    margin-bottom:15px;
+}
+
+.category_card p{
+    color:var(--text-secondary);
+    line-height:1.8;
+}
+
+@media(max-width:992px){
+    .category_cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:768px){
+    .category_cards{
+        grid-template-columns:1fr;
+    }
+}

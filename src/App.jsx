@@ -7,14 +7,27 @@ import Pricing from './pages/Pricing';
 import Trainers from './pages/Trainers';
 import Programs from './pages/Programs';
 import NotFound from './pages/NotFound';
-import Navbar from "./components/Navbar/Navbar";
+import NavBar from './components/Navbar/Navbar';
+import SideBar from './components/SideBar/SideBar';
 import './App.css';
 import Footer from "./components/Footer/Footer";
+import { useState } from "react";
 
 function App(){
+  const [isOpen, setOpen] = useState(false);
+  function toggleSideBar(togg){
+    setOpen(togg);
+  }
   return(
     <>
-      <Navbar/>
+      <NavBar
+        isOpen={isOpen}
+        toggle={toggleSideBar}
+      />
+      <SideBar 
+        isOpen={isOpen}
+        toggle={toggleSideBar}
+      />
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>

@@ -1,0 +1,65 @@
+.business_hours{
+    padding:120px 8%;
+    background:var(--bg-secondary);
+}
+
+.hours_card{
+    max-width:700px;
+    margin:70px auto 0;
+    background:var(--bg-card);
+    border:1px solid var(--border);
+    border-radius:20px;
+    padding:40px;
+}
+
+.hours_icon{
+    width:80px;
+    height:80px;
+    margin:0 auto 35px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:rgba(239,68,68,.15);
+    color:var(--accent);
+    font-size:2rem;
+}
+
+.hour_row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+    border-bottom:1px solid var(--border);
+}
+
+.hour_row:last-child{
+    border-bottom:none;
+}
+
+.hour_row span:first-child{
+    font-weight:600;
+    color:var(--text-primary);
+}
+
+.hour_row span:last-child{
+    color:var(--text-secondary);
+}
+
+.hour_row:last-child span:last-child{
+    color:#ef4444;
+    font-weight:600;
+}
+
+@media(max-width:768px){
+
+    .hours_card{
+        padding:30px 20px;
+    }
+
+    .hour_row{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:6px;
+    }
+}

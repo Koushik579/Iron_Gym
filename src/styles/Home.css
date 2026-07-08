@@ -610,17 +610,137 @@
     color:white;
 }
 
-@media(max-width:900px){
+@media(max-width:1200px){
 
+    .hero_icon{
+        width:350px;
+        height:350px;
+    }
+
+    .hero_content h1{
+        font-size:3rem;
+    }
+
+    .hero_content p{
+        font-size:1.1rem;
+    }
+
+    .section_heading h1,
+    .why_heading h1{
+        font-size:2.5rem;
+    }
+
+}
+@media(max-width:992px){
+
+    .why_cards,
+    .review_cards,
+    .coach_cards,
     .plan_cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .story_stats,
+    .bmi_stats{
+        gap:40px;
+    }
+
+    .hero_icon{
+        width:280px;
+        height:280px;
+    }
+
+    .hero_content h1{
+        font-size:2.5rem;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero_icon{
+        width:180px;
+        height:180px;
+    }
+
+    .hero_content h1{
+        font-size:2rem;
+    }
+
+    .hero_content p{
+        font-size:1rem;
+    }
+
+    .btn_div{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .why_cards,
+    .program_cards,
+    .coach_cards,
+    .plan_cards,
+    .review_cards{
         grid-template-columns:1fr;
     }
 
-    .featured{
-        transform:none;
+    .bmi_stats{
+        flex-direction:column;
+        gap:20px;
     }
-    .featured:hover{
-        transform:translateY(-12px);
+
+    .section_heading h1,
+    .why_heading h1{
+        font-size:2rem;
+    }
+
+    .cta_content h1{
+        font-size:2.4rem;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .hero_icon{
+        width:140px;
+        height:140px;
+    }
+
+    .hero_content h1{
+        font-size:1.6rem;
+    }
+
+    .hero_content p{
+        font-size:.95rem;
+    }
+
+    .btn{
+        width:100%;
+    }
+
+    .program_card video{
+        height:180px;
+    }
+
+    .coach_card img{
+        height:300px;
+    }
+
+    .plan_content{
+        padding:25px;
+    }
+
+    .plan_content h1{
+        font-size:2.5rem;
+    }
+
+    .bmi_content{
+        padding:40px 20px;
+    }
+
+    .cta_content h1{
+        font-size:2rem;
     }
 
 }

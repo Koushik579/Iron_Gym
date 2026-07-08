@@ -1,0 +1,115 @@
+.SideBar{
+    height: 100vh;
+    width: 100%;
+    position:fixed;
+    inset:0;
+    z-index:1000;
+    visibility:hidden;
+    opacity:0;
+    transition:.35s;
+}
+.SideBar.open{
+    visibility:visible;
+    opacity:1;
+}
+
+.SideBar.open nav{
+    transform:translateX(0);
+}
+
+.SideBar nav{
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+    top: 0;
+    left: 0;
+    width:min(320px,80%);
+    height: 100vh;
+    padding: 60px;
+    z-index: 1000;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 5px 15px var(--shadow);
+    transform:translateX(-100%);
+    transition:.35s ease;
+}
+
+.Sidebar_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.Sidebar_links a{
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color .3s ease,
+                border-color .3s ease;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 4px;
+    transition: transform 0.3s ease;
+}
+
+.Sidebar_links a:hover{
+    color: var(--accent);
+    transform: scale(1.2);
+}
+
+.active{
+    color: var(--accent) !important;
+    border-bottom-color: var(--accent);
+    transform: scale(1.2);
+
+}
+
+.SideBar nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.SideBar nav .logo img{
+    width:120px;
+    height:auto;
+}
+
+.sidebar_tint{
+    width:100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.55);
+    opacity:0;
+    transition:.35s;
+}
+
+.SideBar.open .sidebar_tint{
+    opacity:1;
+}
+.close_btn{
+    position:absolute;
+    top:20px;
+    right:20px;
+    background:transparent;
+    border:none;
+    cursor:pointer;
+    padding:5px;
+}
+
+.close_icon{
+    width:28px;
+    height:28px;
+    display:block;
+}
+
+@media (max-width:900px) {
+    .SideBar{
+        display: block;
+    }
+}

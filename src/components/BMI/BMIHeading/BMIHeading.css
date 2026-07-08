@@ -1,0 +1,19 @@
+.bmi_heading{
+    padding:180px 8% 120px;
+    text-align:center;
+    background:var(--bg-primary);
+}
+
+.bmi_heading h1{
+    font-size:clamp(3rem,5vw,5rem);
+    margin:20px 0;
+    line-height:1.2;
+}
+
+.bmi_heading p{
+    max-width:800px;
+    margin:auto;
+    color:var(--text-secondary);
+    line-height:1.9;
+    font-size:1.1rem;
+}

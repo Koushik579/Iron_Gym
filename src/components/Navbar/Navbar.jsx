@@ -1,10 +1,15 @@
 import { NavLink } from "react-router-dom";
-import logo from './irongymlogo.png'
-import './Navbar.css'
-function Navbar(){
+import logo from './irongymlogo.png';
+import './Navbar.css';
+import menu from '../../assets/icons/menu.png'
+
+function Navbar(props){
     return(
         <nav>
             <div className="logo">
+                <button className="menu_btn" onClick={()=> props.toggle(true)}>
+                    <img src={menu} alt="menu" />
+                </button>
                 <img src={logo} alt="logo" />
             </div>
             <div className="nav_links">

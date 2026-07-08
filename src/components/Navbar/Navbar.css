@@ -7,12 +7,16 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 80px;
     padding: 0 40px;
     z-index: 1000;
     border-bottom: 1px solid var(--border);
     box-shadow: 0 5px 15px var(--shadow);
+}
+.logo{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .logo img{
@@ -28,7 +32,6 @@ nav{
 }
 
 .nav_links a{
-
     color: var(--text-secondary);
     text-decoration: none;
     font-size: 1rem;
@@ -68,4 +71,23 @@ nav{
 .join_btn:hover{
     background: var(--accent-hover);
     transform: translateY(-2px);
+}
+.logo .menu_btn{
+    display: none;
+    background-color: var(--bg-primary);
+}
+
+.logo .menu_btn img{
+    height: 36px;
+    width: 36px;
+}
+
+@media (max-width:900px) {
+    nav .nav_links{
+        display: none;
+    }
+    .logo .menu_btn{
+        margin-right: 30px;
+        display: block;
+    }
 }
