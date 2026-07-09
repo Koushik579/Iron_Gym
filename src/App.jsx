@@ -9,6 +9,7 @@ import Programs from './pages/Programs';
 import NotFound from './pages/NotFound';
 import NavBar from './components/Navbar/Navbar';
 import SideBar from './components/SideBar/SideBar';
+import ScrollToTop from "./components/ScrollToTop";
 import './App.css';
 import Footer from "./components/Footer/Footer";
 import { useState } from "react";
@@ -20,6 +21,7 @@ function App(){
   }
   return(
     <>
+      <ScrollToTop />
       <NavBar
         isOpen={isOpen}
         toggle={toggleSideBar}

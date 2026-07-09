@@ -1,5 +1,6 @@
 import '../App.css';
 import '../styles/Home.css'
+import CountUp from "../components/CountUp";
 import homeTopVideo from '../assets/videos/IronGymIntro.mp4';
 import logo from '../assets/images/irongymlogo.png'
 import { Link } from 'react-router-dom';
@@ -238,15 +239,15 @@ function Home(){
                     </p>
                     <div className="bmi_stats">
                         <div>
-                            <h2>5000+</h2>
+                            <h2><CountUp end={5000} suffix="+" /></h2>
                             <span>Members</span>
                         </div>
                         <div>
-                            <h2>20+</h2>
+                            <h2><CountUp end={20} suffix="+" /></h2>
                             <span>Certified Trainers</span>
                         </div>
                         <div>
-                            <h2>15+</h2>
+                            <h2><CountUp end={15} suffix="+" /></h2>
                             <span>Years Experience</span>
                         </div>
                     </div>

@@ -1,5 +1,6 @@
 import '../App.css';
 import '../styles/About.css';
+import CountUp from "../components/CountUp";
 import heroImg from '../assets/images/heroImg.png';
 import back from '../assets/videos/back.mp4'
 import Cta from '../components/Cta'
@@ -181,19 +182,19 @@ function About(){
                 </div>
                 <div className="stats_cards">
                     <div className="stat_card">
-                        <h1>5000+</h1>
+                        <h1><CountUp end={5000} suffix="+" /></h1>
                         <p>Happy Members</p>
                     </div>
                     <div className="stat_card">
-                        <h1>20+</h1>
+                        <h1><CountUp end={20} suffix="+" /></h1>
                         <p>Certified Trainers</p>
                     </div>
                     <div className="stat_card">
-                        <h1>15+</h1>
+                        <h1><CountUp end={15} suffix="+" /></h1>
                         <p>Years Experience</p>
                     </div>
                     <div className="stat_card">
-                        <h1>12+</h1>
+                        <h1><CountUp end={12} suffix="+" /></h1>
                         <p>Training Programs</p>
                     </div>
                 </div>
